@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTimer</title>
+</head>
+<style>
+    body{
+        font-family: monospace;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background: #CCC;
+    }
+    .box{
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+
+    }
+    .box button{
+        width: 25%;
+        font-size: 25px;
+        border-radius: 25px;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .box button:nth-child(1){
+        background-color: rgb(124, 209, 181);
+    } .box button:nth-child(2){
+        background-color: rgb(197, 156, 80);
+    }
+    .box button:nth-child(3){
+        background-color: rgb(238, 89, 89);
+    }
+    .box button:hover{
+        background-color: rgb(56, 211, 35);
+    }
+  
+    h1{
+        font-size: 40px;
+    }
+</style>
+<body>
+    <div class="box">
+        <button onclick="start()">Iniciar</button>
+        <button onclick="pause()">Pausar</button>
+        <button onclick="stop()">Parar</button>
+        <h1 id="cronometro"></h1>
+    </div>
+    <script src="cron.js"></script>
+</body>
+
+</html>
